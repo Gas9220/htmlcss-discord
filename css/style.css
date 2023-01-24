@@ -27,6 +27,8 @@ Debug
 
 .debug .header-image {
     min-height: 400px;
+    background-color: rgb(246, 123, 230);
+
 }
 
 .debug .row-section {
@@ -36,16 +38,11 @@ Debug
 .debug .col-big {
     background-color: rgb(0, 135, 248);
     min-height: 450px;
-
 }
 
 .debug .col-small {
     background-color: rgb(255, 185, 196);
     min-height: 450px;
-}
-
-.debug .square {
-    min-height: 800px;
 }
 
 .debug .footer-col-big {
@@ -62,16 +59,21 @@ Debug
     background-color: rgb(221, 154, 50);
 }
 
-.debug .header-image {
-background-color: rgb(246, 123, 230);
-}
-
 .debug .dashed {
     border-style: dashed;
 }
 
 .debug .square {
     background-color: green;
+    min-height: 800px;
+}
+
+.debug .footer-low-content {
+    background-color: rgb(82, 253, 209);
+}
+
+.debug div.footer-low-content > div {
+    background-color: pink;
 }
 
 /*
@@ -99,6 +101,11 @@ header {
     border-radius: 500px; /* Soluzione trovata qui: https://stackoverflow.com/questions/18794947/capsule-shape-using-border-radius-without-a-set-width-or-height */
 }
 
+.download-btn::before {
+    content: '\2193';
+    margin: auto 5px auto 5px;
+}
+
 /*
 ------------
 Header
@@ -117,7 +124,7 @@ Header
     width: 60%;
 }
 
-#logo {
+.logo {
     width: 20%;
     height: 100%;
     align-self: center;
@@ -172,6 +179,7 @@ Header
 .actions .btn:last-child {
     background-color: black;
     color: white;
+    margin-left: 10px;
 }
 
 /*
@@ -246,11 +254,6 @@ main .row-section:nth-child(3) > .row > .col-big {
     color: white;
 }
 
-.download-btn::before {
-    content: '\2193';
-    margin: auto 5px auto 5px;
-}
-
 /*
 -----------
 Footer
@@ -285,9 +288,9 @@ footer {
 
 .line {
     height: 3px;
-    background-color: white;
-    border-radius: 1px;
-    width: 99%;
+    background-color: rgb(96,128, 208);
+    border: none;
+    width: 60%;
 }
 
 .footer-top > .line {
@@ -299,12 +302,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(82, 253, 209);
-    height: 80px;
 }
 
 div.footer-low-content > div {
-    background-color: pink;
     padding: 10px;
 }
 
@@ -343,6 +343,6 @@ ul.links-collection li:first-child {
 
 .social-links {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin-top: 5px;
 }
