@@ -242,6 +242,8 @@ main .row-section:nth-child(3) > .row > .col-big {
     align-self: center;
     margin-top: 20px;
     height: 40px;
+    background-color: rgb(96,128, 208);
+    color: white;
 }
 
 .download-btn::before {
@@ -256,13 +258,14 @@ Footer
 */
 
 footer {
-    background-color: rgb(31, 35, 37);
+    background-color: rgb(50, 50, 50);
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .footer-top {
-    margin-top: 12px;
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -303,4 +306,43 @@ footer {
 div.footer-low-content > div {
     background-color: pink;
     padding: 10px;
+}
+
+ul.links-collection {
+    list-style: none;
+}
+
+ul.links-collection li {
+    margin-bottom: 8px;
+    
+}
+
+ul.links-collection li:first-child {
+    color: rgb(96,128, 208);
+    font-weight: 700;
+}
+
+.footer-col-big h3 {
+    color: rgb(96,128, 208);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#language::after {
+    content: '\2304';
+
+    /* Per allineare la freccetta ad Italiano */
+    position: relative;
+    bottom: 2px;
+}
+
+.flag {
+    width: 18px;
+    margin-top: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
 }
