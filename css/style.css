@@ -58,14 +58,41 @@ Debug
     background-color: rgb(0, 168, 160);
 }
 
+.debug .header-content {
+    background-color: rgb(221, 154, 50);
+}
+
+.debug .header-image {
+background-color: rgb(246, 123, 230);
+}
+
+.debug .dashed {
+    border-style: dashed;
+}
+
 /*
 -----------
 Common
 -----------
 */
 
-.dashed {
-    border-style: dashed;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    color: white;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 500px; /* Soluzione trovata qui: https://stackoverflow.com/questions/18794947/capsule-shape-using-border-radius-without-a-set-width-or-height */
 }
 
 /*
@@ -81,34 +108,38 @@ Header
 
 .header-content {
     margin: 0 auto;
-    background-color: rgb(221, 154, 50);
+    
     display: flex;
     width: 60%;
 }
 
 #logo {
     width: 20%;
+    height: 100%;
     align-self: center;
     padding: 5px;
+    background-image: url('../img/logo.svg');
+    background-repeat: no-repeat;
 }
 
 #login {
     width: 20%;
-    align-self: center;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
     padding: 5px;
 }
 
 #links {
     display: flex;
     width: 60%;
-    align-self: center;
+    height: 100%;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     padding: 5px;
     flex-wrap: wrap;
 }
+
+
 
 .low-header {
     display: flex;
@@ -116,10 +147,27 @@ Header
 }
 
 .header-image {
-    margin: 0 auto;
+    margin: 80px auto 60px auto;
     width: 40%;
     border-radius: 10px;
-    background-color: rgb(246, 123, 230);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actions {
+    padding: 20px;
+}
+
+.actions > .btn {
+    height: 40px;
+}
+
+.actions .btn:last-child {
+    background-color: black;
+    color: white;
 }
 
 /*
