@@ -70,6 +70,10 @@ background-color: rgb(246, 123, 230);
     border-style: dashed;
 }
 
+.debug .square {
+    background-color: green;
+}
+
 /*
 -----------
 Common
@@ -181,7 +185,6 @@ main .row-section:nth-child(even) {
 }
 
 .row .col-big {
-    
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 350px;
@@ -199,7 +202,7 @@ main .row-section:nth-child(3) > .row > .col-big {
     background-image: url('../img/item3.svg');
 }
 
-.description h2 {
+ h2 {
     margin-bottom: 15px;
     margin-top: 25px;
 }
@@ -227,8 +230,23 @@ main .row-section:nth-child(3) > .row > .col-big {
 }
 
 .square {
-    background-color: green;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.square > .btn {
+    max-width: 160px;
+    align-self: center;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.download-btn::before {
+    content: '\2193';
+    margin: auto 5px auto 5px;
 }
 
 /*
